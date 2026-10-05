@@ -112,7 +112,7 @@ namespace MemoryGame
                 MostPoints.Add(new UserDTO
                 {
                     Username = reader.GetString("username"),
-                    TotalWins = reader.GetInt32("total_points")
+                    TotalPoints = reader.GetInt32("total_points")
                 });
             }
 

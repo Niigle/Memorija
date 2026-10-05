@@ -45,7 +45,7 @@ namespace MemoryGame
                 mostWins.Add(level, userDTOList);
             }
 
-            LeaderboardResponse leaderboardResponse = new(MessageType.LEADERBOARD, mostWins, mostPoints);
+            LeaderboardResponse leaderboardResponse = new(MessageType.LEADERBOARD, mostPoints, mostWins);
 
             PosaljiPorukuKlijentu(connection, leaderboardResponse);
         }

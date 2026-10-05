@@ -137,14 +137,14 @@ namespace Memorija
 
         public async void PauzirajTimerNaDveSekunde()
         {
-            // 1. Zaustavi glavne otkucaje timera
+            
             timer?.Stop();
             timer?.Dispose();
 
-            // 2. Sačekaj 2000 milisekundi (2 sekunde) asinhrono (ne blokira nit)
+            
             await Task.Delay(2000);
 
-            // 3. Pokreni timer ponovo
+            
             PodesiTimer();
         }
 
